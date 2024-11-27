@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#Advertise">Advertise</a></li>
+            <li><a href="#Advertise">News</a></li>
+        </ul>
+    </nav>
+
+    <div id="calendar">
+        <div id="calendar-header">
+            <button id="prev-month">&#60;</button>
+            <h2 id="month-name"></h2>
+            <button id="next-month">&#62;</button>
+        </div>
+        <div id="calendar-days">
+            <div class="week-days">
+                <div>Sun</div> <br>
+                <div>Mon</div> <br>
+                <div>Tue</div> <br>
+                <div>Wed</div> <br>
+                <div>Thu</div> <br>
+                <div>Fri</div> <br>
+                <div>Sat</div> <br>
+            </div>
+            <div id="days"></div>
+        </div>
+    </div>
+
+    <script src="calendar.js"></script>
+</body>
+</html>

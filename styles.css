@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#calendar {
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 80px;
+}
+
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#calendar-header button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#month-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#calendar-days {
+    display: flex;
+    flex-direction: column;
+}
+
+.week-days {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+#days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+}
+
+#days div {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#days div:hover {
+    background-color: #ddd;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+#calendar-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+#days div {
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#days div:hover {
+    background-color: #ddd;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    #days {
+        grid-template-columns: repeat(5, 1fr); /* Less columns on small screens */
+    }
+}
+
+.weekdays {
+    display: flex; /* Arrange the days in a row */
+    justify-content: space-between; /* Add equal space between days */
+    margin-bottom: 10px; /* Add space below the row */
+    text-align: center; /* Center the text in each day */
+}
+
+.weekdays div {
+    flex: 1; /* Ensure equal width for each day */
+    padding: 20px; /* Add padding inside each div for spacing */
+    border: 1px solid #ccc; /* Optional: Add a border around each day */
+    margin: 5px; /* Optional: Add space between the days */
+    border-radius: 5px; /* Optional: Round the corners */
+    background-color: #f9f9f9; /* Optional: Add a light background color */
+    font-weight: bold; /* Make the text bold */
+}
+
