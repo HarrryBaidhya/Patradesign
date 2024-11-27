@@ -49,6 +49,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    gap: 12px;
 }
 
 #days {
